@@ -33,4 +33,4 @@
 
 #### Semantic HTML
 
-> div
+> that introduces meaning to the web page rather than just presentation. ex. a p tag indicates that the enclosed text is a paragraph.
