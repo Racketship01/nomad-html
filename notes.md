@@ -44,4 +44,7 @@
 
 ### Padding
 
--
+- is the opposite of margin
+- is apce from the border of the box to the inside
+
+> using # in style means design for id
