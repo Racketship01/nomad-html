@@ -1,0 +1,15 @@
+// server
+{
+    version: "1"
+    book_title: "sdfsdf",
+    context: "sdfsajfsadfsadfghsagdfgsadjfjhsakdfs"
+}
+
+
+// client
+{
+    
+    version: "0.1"
+    book_title: "sdfsdf",
+    context: ""
+}

@@ -1,0 +1,7 @@
+/* cascading means from top to bottom */
+body {
+  background-color: tomato;
+}
+h1 {
+  color: tomato;
+}

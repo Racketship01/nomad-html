@@ -1,0 +1,538 @@
+<!-- system requirements
+brave browser - blocks ads
+visual studio code
+github desktop
+
+
+a website is just a text file, basically. Made up of two or three languanges.(html,css,js)
+
+html - expain to the browser how the content of structure. can explain to the browser how the contents works
+css  - design - how does the content look like 
+javascript - brain of the website.  -->
+<!-- 
+<h1>Hello ! this is my website</h1>
+<h2>another page</h2>
+<h3>another page</h3>
+<h4>another page</h4>
+<h5>another page</h5>
+<h6>another page</h6> -->
+
+<!-- <ul>
+  <li>beer</li>
+  <li>kimchi</li>
+  <li>meat</li>
+  <li>milk</li>
+</ul> -->
+
+<!-- <ol>
+  <li>beer</li>
+  <li>kimchi</li>
+  <li>meat</li>
+  <li>milk</li>
+</ol> -->
+
+<!-- 
+<a></a> - anchor -->
+<!-- <a href="http://google.com" target="_blank"> go to google.com </a> -->
+<!-- href - hyperlink reference (doesnt work on an h1) -->
+<!-- target - attribute use to next page in the link (doesnt work in h1 neither) -->
+
+<!-- <img > img - is a self closing tag -->
+<!-- <img
+  src="https://api.time.com/wp-content/uploads/2020/07/Seventeen-Henggarae.jpg?quality=85&crop=0px%2C1652px%2C6933px%2C3629px&resize=1200%2C628&strip"
+/> -->
+<!-- <img src="crcrcr.jpg" /> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.png"
+    />
+    <title>Home - My website</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      /* h1 {
+        color: aquamarine;
+        text-decoration: underline;
+        font-size: 50px;
+        font-weight: 200;
+        font-style: italic;
+      }
+      main {
+        text-align: center;
+        color: teal;
+          } */
+
+      /* a margin is a space from the border of the box to the outside that exactly what th ebody has by the default*/
+      /* padding is the opposite of margin, space from the border of the box to the inside */
+
+      /* * {
+        border: 1px dashed black;
+      }
+
+      html {
+        background-color: tomato;
+      } */
+
+      body {
+        /* margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 5px;
+        margin-bottom: 10px;  */
+        /* margin: 0; top right bottom left */
+        /* margin: 20px;
+        padding: 20px;
+        background-color: thistle; */
+        height: 1000vh;
+        /* vh- viewport height ,change word for screen, 100vh means hundred percent screen height
+        also can work 1000px*/
+
+        margin: 50px;
+        /* display: flex; */
+        /* display makes the body content moves flexibly */
+
+        /* justify-content: space-between; */
+        /* justify content -moves in main axis by default (horizontal) */
+
+        /* flex-direction: column; */
+
+        /* align-items: center; */
+        /* align items- moves in cross axis by default (vertical) */
+
+        /* flex-wrap: wrap-reverse; */
+      }
+
+      /* div {
+      /* display: inline; */
+      /* margin-left: 50px; */
+
+      /* margin: 80px 15px; */
+      /* height: 150px;
+        width: 150px; */
+      /* padding: 20px;
+        border: 2px solid black; */
+      /* background-color: whitesmoke; */
+      /* } */
+
+      /* #first {
+        background-color: whitesmoke;
+        width: 150px;
+        height: 150px;
+      }
+      #second {
+        background-color: teal;
+        width: 100px;
+        height: 100px;
+      }
+      #third {
+        background-color: wheat;
+        width: 50px;
+        height: 50px;
+      }
+      #fourth {
+        background-color: blanchedalmond;
+        width: 25px;
+        height: 25px;
+      }
+      span {
+        border-style: dotted;
+        height: 10000px;
+      } */
+
+      /* span {
+        display: block;
+        background-color: teal;
+        padding: 20px;
+        margin: 30px;
+      } */
+      /* #tomato,
+      #tomato2,
+      #tomato3 {
+        background-color: tomato;
+      } */
+      /* .btn {
+        padding: 5px 10px;
+        border-radius: 10px;
+      }
+
+      .tomato {
+        background-color: tomato;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+      }
+      .teal {
+        background-color: teal;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+      } */
+
+      /* div {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        position: fixed;
+        color: white;
+        width: 150px;
+        height: 150px;
+        background-color: wheat;
+        position: relative;
+        margin-right: 10.01px;
+      } */
+
+      /* div:first-child {
+        background-color: tomato;
+      }
+      using pesudo is much mure okay than using an class/id
+      div:last-child {
+        background-color: teal;
+      }
+
+      span {
+        background-color: tomato;
+      }
+      span:nth-child(2),
+      span:nth-child(4) {
+        background-color: green;
+      }
+      span:nth-child(even) {
+        background-color: teal;
+      }
+      span:nth-child(2n + 1) {
+        background-color: teal;
+      }
+      n- allows it to do it every other number */
+
+      /* #different {
+        top: 5px;
+        left: 200px;
+        position: fixed;
+        background-color: wheat;
+        width: 350px;
+      }
+      #green {
+        position: fixed;
+        background-color: teal;
+        opacity: 0.2;
+      } */
+
+      /* .green {
+        background-color: teal;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        absolute will align itself according to the closes relative father
+        top: -10px;
+        left: -10px;
+        bottom: 0px;
+        right: 0px;
+      } */
+
+      /* span {
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      p span {
+        color: white;
+        text-decoration: none;
+      }
+      div > span {
+        text-decoration: underline;
+        > - sign that can indicate that span is direct child to a div
+      }
+      p + span {
+        text-decoration: underline;
+        + -  not inside but immediately next to
+        ~ - brother plus brother
+      } */
+
+      /* input {
+        border: 1px solid wheat;
+      }
+
+      input:required {
+        border: 1px solid tomato;
+      }
+      input[type="password"] {
+        background-color: thistle;
+      }
+      input[placeholder~="name"] {
+        background-color: pink;
+      } */
+
+      /* button:active {
+        background-color: tomato;
+      } */
+      /* button:hover {
+        background-color: tomato;
+      } */
+      /* input:focus {
+        background-color: tomato;
+      } */
+      /* a:visited {
+        color: tomato;
+      }
+      a:hover {
+        color: teal;
+      }
+      a:focus {
+        color: turquoise;
+      } */
+
+      /* form {
+        border: 1px solid salmon;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      form:focus-within {
+        border-color: seagreen;
+      }
+      form:hover input:focus {
+        background-color: sienna;
+      } */
+
+      /* input::placeholder {
+        color: yellowgreen;
+      } */
+
+      /* p::selection {
+        padding: 20px;
+        color: white;
+        background-color: yellowgreen;
+      } */
+      /* p::first-letter {
+        font-size: 50px;
+        color: white;
+        background-color: yellowgreen;
+      } */
+      /* A pseudo-class is used to define a special state of an element */
+
+      :root {
+        --main-color: #977f6e;
+        --default-border: 1px solid var(--main-color);
+      }
+      p {
+        background-color: var(--main-color);
+        /* color: #977f6e; */
+        /* rgb(0,0,0) - red green blue
+        rgba(0,0,0,0)- red green blue alpha/opacity/transparency */
+      }
+      a {
+        color: var(--main-color);
+        /* color: #977f6e; */
+      }
+    </style>
+    <meta name="description" content="This is my website" />
+    <meta charset="utf-8" />
+  </head>
+  <!-- all the text you put in the head are all invisible  -->
+  <body>
+    <!-- <div id="header">
+      <h1>Times</h1>
+    </div>
+
+    <header>
+      <h1>website</h1>
+    </header>
+    <main>
+      <p>hello!</p>
+      <span> hello! </span>
+    </main>
+    <footer>&copy; 2020 N.C</footer> -->
+
+    <!-- <div></div>
+    <div></div>
+    <div></div>
+    <span>hello!</span>
+    <span>hello!</span>
+    <span>hello!</span>
+
+    <a href="#">link</a>
+    <span>hello!</span>
+    <p>Welcome to my website</p>
+    <address>hello</address> -->
+    <!-- <blockqoute>hello</blockqoute> -->
+    <!-- <code>hello</code>
+    <img src="ww.jpg" /> -->
+
+    <!-- <div id="first">
+      <div id="second">
+        <div id="third">
+          <span>hello</span> -->
+    <!-- <div id="fourth"></div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <span> hello </span>
+    <span id="tomato"> hello </span>
+    <span> hello </span>
+    <span id="tomato2"> hello </span>
+    <span> hello </span>
+    <span id="tomato3"> hello </span>
+    <span> hello </span> -->
+
+    <!-- <span class="btn teal"> hello </span>
+    <span class="btn tomato"> hello </span>
+    <span class="btn teal"> hello </span>
+    <span class="btn tomato"> hello </span>
+    <span class="btn teal"> hello </span>
+    <span class="btn tomato"> hello </span>
+    <span class="btn teal"> hello </span> -->
+
+    <!-- <div id="green"></div>
+    <div id="different"></div> -->
+    <!-- <div id="second">2</div>
+    <div>3</div> -->
+
+    <!-- <div></div>
+    <div></div>
+    <div></div>
+    <div></div> -->
+
+    <!-- <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span> -->
+
+    <!-- <div>
+      <span>hello</span>
+      <p>
+        The illustration (examples) paragraph is useful when we want to explain
+        or clarify something, such as an object, a person, a concept, or a
+        situation. When we illustrate, we show how something is as we point out.
+        <span>inside</span>
+      </p>
+      <address>hi</address>
+      <span>hello</span>
+    </div> -->
+
+    <!-- <div>
+      <form>
+        <input type="text" placeholder="Firt name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
+    </div> -->
+
+    <!-- <div>
+      <button>hello</button>
+      <input type="text" />
+      <input type="text" />
+    </div> -->
+
+    <!-- <a href="https://apple.com">Go to apple</a> -->
+
+    <!-- <form>
+      <input type="text" name="" id="" />
+      <input type="text" name="" id="" />
+      <input type="text" name="" id="" />
+    </form> -->
+
+    <p>
+      The illustration (examples) paragraph is useful when we want to explain or
+      clarify something, such as an object, a person, a concept, or a situation.
+      When we illustrate, we show how something is as we point out.
+    </p>
+    <div>
+      <a href="#">website</a>
+    </div>
+
+    <!-- <form>
+      <input type="text" placeholder="name" />
+    </form> -->
+
+    <!-- <h1>Hello !</h1>
+    <a href="http://google.com" target="_blank"> go to google.com </a>
+    <img src="crcrcr.jpg" />
+    <p>My favorite lang <abbr title="Cascading Style Sheet">CSS</abbr></p>
+    <pre>hiiii!</pre>
+    <cite>seventeen</cite>
+    <code>seventeen</code>
+    <p>I live in <mark>Pasay</mark></p>
+    <p>I live in <strong>Pasay</strong></p>
+    <p>I live in <sub>Pasay</sub></p>
+    <p>I live in <sup>Pasay</sup></p>
+    <audio
+      controls="enabled"
+      autoplay="true"
+      src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+    ></audio> -->
+
+    <!-- <dialog open>
+      <p>Greetings, one and all!</p>
+    </dialog> -->
+    <!-- 
+    <form> -->
+    <!-- <tagname required attrname="attrvalue">then put whatever you want</tagname> -->
+    <!-- <label for="profile">Profile Photot</label>
+      <input id="profile" type="file" accept=".pdf,image/*" /> -->
+
+    <!-- <input type="color" /> -->
+    <!-- <label for="email">Email</label>
+      <input
+        id="email"
+        required
+        placeholder="enter your email here"
+        type="text"
+      />
+      <input
+        required
+        placeholder="enter your password here"
+        minlength="10"
+        type="password"
+      />
+      <input type="submit" value="create account" /> -->
+
+    <!-- <div> -->
+    <!-- div ? is like a box  -->
+    <!-- <label for="website">Website</label>
+        <input
+          id="website"
+          required
+          placeholder="enter your email here"
+          type="email"
+        />
+      </div> -->
+
+    <!-- <div> -->
+    <!-- id is an attribute that you can add anything inside of the body - unique identifier a tag shoud have one id
+        <input
+          id="website"
+          required
+          placeholder="enter your email here"
+          type="range"
+        />
+      </div> -->
+
+    <!-- <div>
+        <input
+          id="website"
+          required
+          placeholder="enter your email here"
+          type="date"
+        /> -->
+
+    <!-- <input
+        required
+        placeholder="enter your password here"
+        minlength="10"
+        type="password"
+      /> -->
+    <!-- <input type="submit" value="create account" />
+      </div>
+    </form> -->
+  </body>
+</html>
