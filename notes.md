@@ -38,6 +38,9 @@
 ### Margin
 
 - is a space from the border of the box to the outside
+  > margin: 20px (top) 5px (right) 12px (buttom) 9px (left);
+
+> collapsible margin
 
 ### Padding
 
