@@ -48,3 +48,7 @@
 - is apce from the border of the box to the inside
 
 > using # in style means design for id
+
+### Border
+
+> border: 2px (width) solid (style) black (color);

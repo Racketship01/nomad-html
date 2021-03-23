@@ -6,12 +6,15 @@
     <link href = "style1.css" rel = "stylesheet" />
 </head>
 <style>
+    * {
+        border: 2px dashed black;
+    }
 
     html {
         background-color: tomato;
     }
     body {
-        margin: 0; 
+        margin: 20px; 
         padding: 20px;
         background-color: thistle;
         
@@ -19,14 +22,13 @@
 
     div {
         
-        height: 150px;
-        width: 150px;
-        background-color: whitesmoke;
-        padding: 10px;
+        
+        padding: 20px;
+        
     }
 
         #first {
-            background-color: thistle;
+            background-color: yellowgreen;
             height: 150px;
         width: 150px;
         }
@@ -41,12 +43,10 @@
             height: 50px;
         width: 50px;
         }
-        #fourth {
-            background-color: turquoise;
-            height: 25px;
-        width: 25px;
+        
+        span {
+            border: dotted;
         }
-
 
 </style>
 
@@ -55,7 +55,7 @@
 <div id = "first">
     <div id = "second">
         <div id = "third">
-            <div id = "fourth"></div>
+          <span>hello </span> 
         </div>
     </div>
 </div>
