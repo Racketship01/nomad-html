@@ -31,6 +31,14 @@
 
 > brain of the website
 
-#### Semantic HTML
+### Semantic HTML
 
 > that introduces meaning to the web page rather than just presentation. ex. a p tag indicates that the enclosed text is a paragraph.
+
+### Margin
+
+- is a space from the border of the box to the outside
+
+### Padding
+
+-
