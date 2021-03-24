@@ -9,30 +9,29 @@
     
         body {
             height: 1000vh;
-            margin: 20px;
+            margin: 50px;
             
         }
 
         div {
-            /* position: fixed; */
+            position: relative;
             width: 300px;
             height: 300px;
             
-            color: white;
+            background-color: wheat;
             
         }
-        
-       #different {
-           
-           background-color: wheat;
-           
-       }
 
-       #green {
-        position: fixed;
-        background-color: teal;
-        opacity: 0.2;
-       }
+        .green {
+            background-color: teal;
+            height: 100px;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 100px;
+        }
+        
+       
        
         </style>
 </head>
@@ -41,8 +40,9 @@
 
 <body>
 
-          <div id = "green"></div>
-          <div id = "different"></div>
+         <div>
+             <div class = "green"></div>
+         </div>
 
 
 </body>

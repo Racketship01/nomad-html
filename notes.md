@@ -53,6 +53,8 @@
 
 > border: 2px (width) solid (style) black (color);
 
-> (#) - id
+> (#) - id | (.) - class
 
-> (.) - class
+> position: relative; (father) absolute; (child)
+
+>
