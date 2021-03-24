@@ -52,3 +52,7 @@
 ### Border
 
 > border: 2px (width) solid (style) black (color);
+
+> (#) - id
+
+> (.) - class

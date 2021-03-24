@@ -8,29 +8,31 @@
     <style>
     
         body {
-            height: 100vh;
+            height: 1000vh;
             margin: 20px;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            align-items:  center;
-            /* flex-wrap: wrap-reverse; */
+            
         }
 
         div {
-            display: flex;
-            align-items:  center;
-            justify-content: center;
+            /* position: fixed; */
             width: 300px;
             height: 300px;
-            background-color: teal;
+            
             color: white;
-            font-size: 28px;
+            
         }
         
-        #second {
-            background-color: wheat;
-        }
+       #different {
+           
+           background-color: wheat;
+           
+       }
+
+       #green {
+        position: fixed;
+        background-color: teal;
+        opacity: 0.2;
+       }
        
         </style>
 </head>
@@ -39,10 +41,8 @@
 
 <body>
 
-          <div>1</div>
-          <div id = "second">2</div>
-          <div>3</div>
-          
+          <div id = "green"></div>
+          <div id = "different"></div>
 
 
 </body>
