@@ -57,4 +57,28 @@
 
 > position: relative; (father) absolute; (child)
 
->
+### Pseudo Selector
+
+- CSS selectors with a colon preceding them.
+
+```
+sample code:
+a: hover {
+        color: teal;
+      }
+
+
+span:nth-child(2) {
+            background-color: teal;
+        }
+
+span:nth-child(even){
+            background-color: teal;
+        }
+
+span:nth-child(2n + 1){
+            background-color: teal;
+        }
+
+      (n allows to do it every other number)
+```
