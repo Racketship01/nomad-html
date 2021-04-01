@@ -82,3 +82,12 @@ span:nth-child(2n + 1){
 
       (n allows to do it every other number)
 ```
+
+```
+div > span{
+            text-decoration: wavy;
+
+        }
+
+      "direct children"
+```

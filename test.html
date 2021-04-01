@@ -14,15 +14,20 @@
         }
 
         span {
-            background-color: tomato;
+            background-color: yellowgreen;
+            padding: 5px;
+            border-radius: 10px;
+            /* text-decoration: underline; */
         }
 
-        span:nth-child(3n + 1){
-            background-color: teal;
+        p span {
+            color: white;
+            /* text-decoration: none; */
         }
-       
-         
+        p ~ span{
+            text-decoration: underline;
 
+        }
         </style>
 </head>
 
@@ -30,17 +35,17 @@
 
 <body>
 
-         <span>hello</span>
-         <span>hello</span>
-         <span>hello</span>
-         <span>hello</span>
-         <span>hello</span>
-         <span>hello</span>
+        
+    <div>
 
-         <span>hello</span>
+        <form>
+            <input type="text" placeholder="username" />
+            <input type="text" required placeholder="password" />
 
-         <span>hello</span>
+        </form>
 
+        
+    </div>
 
 
 
