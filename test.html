@@ -20,14 +20,21 @@
             /* text-decoration: underline; */
         }
 
-        p span {
-            color: white;
-            /* text-decoration: none; */
+        input{
+            border: 1px solid wheat;
         }
-        p ~ span{
-            text-decoration: underline;
 
+        
+
+        input:required{
+            /* border: 1px solid tomato; */
+            border-color: tomato;
         }
+
+        input[placeholder~="name"]{
+            background-color: pink;
+        }
+        
         </style>
 </head>
 
@@ -39,7 +46,8 @@
     <div>
 
         <form>
-            <input type="text" placeholder="username" />
+            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Last name" />
             <input type="text" required placeholder="password" />
 
         </form>
