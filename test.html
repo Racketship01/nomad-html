@@ -6,7 +6,10 @@
     <link href = "style1.css" rel = "stylesheet" />
 
     <style>
-    
+        :root {
+            --main-color:#0da9b4;
+            --default-border: 1px solid var(--main-color);
+        }
         body {
             height: 1000vh;
             margin: 50px;
@@ -20,13 +23,15 @@
             
         }
 
-        p::first-line{
-            background-color: yellowgreen;
-            font-size: 50px;
-            color: white;
+      
+        p {
+            background-color: var(--main-color);
         }
 
-
+        a {
+            color: var(--main-color);
+            border: var(--default-border);
+        }
 
         </style>
 </head>
@@ -38,7 +43,9 @@
         
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et nunc non lorem hendrerit sagittis. In cursus lorem a est fringilla, sed vestibulum elit facilisis. Sed rutrum lorem non erat posuere, fermentum fermentum tortor lobortis. Vestibulum ullamcorper lectus felis, sed congue dolor mollis et. Sed sit amet congue lorem. Nunc dignissim ipsum at cursus faucibus. Sed porttitor metus et fermentum convallis. Etiam nec lorem at ligula malesuada gravida eu non mi. Cras vestibulum, erat tempor eleifend scelerisque, leo magna mattis tellus, at maximus purus magna id massa. Suspendisse suscipit finibus lectus, quis consequat quam fringilla ut. Nulla non malesuada diam, ut vestibulum purus. Aliquam ac dictum lectus.</p>
 
-
+    <div>
+        <a href="#">website</a>
+    </div>
 
 </body>
 </html>
