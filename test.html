@@ -14,27 +14,25 @@
         }
 
         span {
-            background-color: yellowgreen;
+            /* background-color: yellowgreen; */
             padding: 5px;
             border-radius: 10px;
-            /* text-decoration: underline; */
+            
         }
 
-        input{
-            border: 1px solid wheat;
+        form {
+            border: 1px solid salmon;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        form:hover input:focus {
+            border-color: sienna;
         }
 
-        
 
-        input:required{
-            /* border: 1px solid tomato; */
-            border-color: tomato;
-        }
 
-        input[placeholder~="name"]{
-            background-color: pink;
-        }
-        
+
         </style>
 </head>
 
@@ -43,18 +41,11 @@
 <body>
 
         
-    <div>
-
-        <form>
-            <input type="text" placeholder="First name" />
-            <input type="text" placeholder="Last name" />
-            <input type="text" required placeholder="password" />
-
-        </form>
-
-        
-    </div>
-
+    <form >
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+    </form>
 
 
 
